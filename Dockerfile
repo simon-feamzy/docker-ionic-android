@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-LABEL MAINTAINER="cagianx <gianluca.cagnin@gmail.com>"
+LABEL MAINTAINER="sguerard <simon.guerard@feamzy.com>"
 
 ARG ANDROID_SDK_ROOT="/opt/android-sdk"
 
@@ -21,7 +21,7 @@ RUN apt-get install -y  \
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs
 
-RUN npm install -g @ionic/cli@^6.6 cordova@^9 @angular/cli@^9
+RUN npm install -g @ionic/cli@^6.6 capacitor @angular/cli@^10
 
 # download and install Gradle
 # https://services.gradle.org/distributions/
